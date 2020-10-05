@@ -1,0 +1,318 @@
+body {
+  /* Location of the image 
+  background-image: url(images/clauds.jpg);*/
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading
+  background-color: #ffde03;*/
+  background: linear-gradient(-70deg, #fa7c30 50%, rgba(0, 0, 0, 0) 30%), url('planets.jpg');
+
+}
+
+
+#logo {
+  width: 30px;
+  height: 30px;
+  float: left;
+  margin-right: 2px;
+  margin-left:32%;
+  margin-top: -10px;
+}
+h1{
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-weight: bold;
+  color: black;
+  font-size: 15px;
+}
+h2{
+  font-size: 5px;
+  text-align: center;
+  color: black;
+
+}
+
+#fatah{
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+h3{
+  text-align: center;
+  color: black;
+  font-size: 13px;
+}
+h4{
+  text-align: center;
+  color: black;
+  font-size: 10px;
+  margin-top: -7px;
+}
+
+#inbox{
+  width: 40px;
+  height: 40px;
+  margin-left: 84%;
+}
+.user{
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin-right: 10px;
+}
+
+
+#fariimo{
+  margin: auto;
+  width: 80%;
+  background-color: black;
+ border:1px solid #0336ff;
+  padding: 10px;
+  opacity: 0.7;
+  overflow: scroll;
+  height: 200px;
+  color: white;
+
+}
+
+.fariim{
+  border:1px solid #0336ff;
+  background-color: black;
+  padding-left: 2px;
+  padding-top: 2px;
+ opacity: 0.7;
+ color: white;
+
+}
+
+#departments{
+  margin: auto;
+  width: 80%;
+  border: 3px solid blue;
+  padding: 10px;
+  background-color: white;
+  overflow: scroll;
+  height: 200px;
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  padding: 10px;
+  padding-top: 50px;
+  margin: auto;
+
+
+}
+.container > div {
+  flex: 1; /*grow*/
+  border: 3px solid blue;
+  height: 50px;
+  text-align: center;
+  padding-top: 25px;
+  margin-right: 6px;
+}
+
+.container2 > div {
+  flex: 1; /*grow*/
+  border: 3px solid blue;
+  height: 50px;
+  text-align: center;
+  margin-right: 6px;
+  padding-top: 25px;
+}
+
+.container2 {
+  display: flex;
+  width: 80%;
+  padding: 10px;
+  
+  margin: auto;
+}
+
+.glow-on-hover {
+    width: 320px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1em;
+    background: #3700B3;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    margin-left: 18%;
+    margin-top: 5%;
+    background-color: #3700B3;
+
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+.container
+{
+    width: 300px;
+    border: 2px solid #333;
+    padding: 15px 10px;
+}
+.container h2
+{
+    text-align: center;
+    margin-bottom: 15px
+
+}
+textarea
+{
+    height: 20px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #aaa;
+    background-color: transparent;
+    margin-bottom: 10px;
+    resize: none;
+    outline: none;
+    transition: .5s
+}
+
+input[type="submit"], button
+{
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: blue;
+}
+input[type="submit"]
+{
+    color: #fff;
+    background-color: #273c75
+}
+button
+{
+    color: #333;
+    background-color: transparent
+}
+.btn
+{
+    display: none
+}
+
+.theebuttons
+{
+  
+  margin-top: 20px;
+  margin-left: 10px;
+  width: 130px;
+  height: 40px;
+  padding: 10px 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+#Approve{
+  margin-left: 35px;
+}
+
+#Approve:hover{
+  background-color: green;
+
+}
+
+#hold:hover{
+  background-color: red;
+  
+}
+
+#forward:hover{
+  background-color: white;
+  color:black;
+  
+}
+
+#visit{
+  margin-top: -20px;
+  margin-left:36%;
+  margin-bottom: 20px;
+  opacity: 0.7;
+}
+
+#visit:hover{
+  background-color: blue;
+}

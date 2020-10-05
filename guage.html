@@ -1,0 +1,251 @@
+<DOCTYPE html>
+<html lang="eng">
+<head>
+	<meta charset="utf-8">
+	<title>Gauge metter</title>
+	<style>
+
+		*,*::before, *::after{
+			box-sizing: border-box;
+		}
+
+		html{
+			height: 100%;
+			width: 100%;
+		}
+
+		body{
+			font-family: tahoma;
+			height: 100%;
+			width: 100%;
+			position: relative;
+			display: table;
+			margin: 0;
+		}
+
+		.container{
+			height: 46em;
+			width: 34%;
+			text-align: center;
+			display: table-cell;
+			vertical-align: middle;
+			
+		}
+
+		.container:first-of-type{
+			background-color: #ffeb3b;
+		}
+
+		.container:first-of-type .rail{
+			stroke: white;
+		}
+		
+		.container:first-of-type .progress{
+			stroke: #101010;
+		}
+
+		.container:first-of-type .percentage{
+			color: #101010;
+		}
+
+	.container:nth-of-type(2){
+		background-color: #ed5752;
+	}
+	.container:nth-of-type(2) .rail{
+		stroke: white;
+	}
+	.container:nth-of-type(2) .progress{
+		stroke: #cb0000;
+	}
+
+	.container:nth-of-type(3){
+		background-color: #f1f3ce;
+	}
+	.container:nth-of-type(3) .rail{
+		stroke: #34495e;
+	}
+	.container:nth-of-type(3) .progress{
+		stroke: #e91e73;
+	}
+
+	.container:nth-of-type(4){
+		background-color: #009788;
+	}
+	.container:nth-of-type(4) .rail{
+		stroke: #fff;
+	}
+	.container:nth-of-type(4) .progress{
+		stroke: #ffeb3b;
+	}
+
+
+.gauge-container{
+	display: inline-block;
+	position: relative;
+	width: 70%;
+}
+
+.gauge-container .gauge{
+	position: relative;
+	display: block;
+}
+
+.gauge-container .gauge circle{
+	stroke-width:15;
+}
+
+.gauge-container .gauge .rail{
+	fill: transparent;
+}
+
+.gauge-container .center{
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-weight: 300;
+	color: white;
+}
+
+	.gauge-container .center .percentage{
+		font-size: 2vw;
+	}
+
+	.gauge-container .center .percentSymbol{
+		font-size: 0.8em;
+		color: green;
+	}
+
+	.gauge-container .center .value{
+		font-size: 0.9em;
+		color: white;
+	}
+
+	span.value{
+		color: #333;
+		font-weight: bold;
+	}
+
+	h1{
+		font-size: 15px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+	</style>
+</head>
+
+<body>
+	
+	<div class="container">
+		<div class="gauge-container">
+			<svg class="gauge" viewBox="0 0 150 150">
+				<circle class="rail" r="67" cx="75" cy="75"></circle>
+
+				<circle class="progress" r="67" data-target="84" cx="75" cy="75">
+					
+				</circle>
+
+			</svg>
+
+			<span class="center percentage">
+				<span class="value">0</span>
+				<span class="percentSymbol">%</span>
+			</span>
+
+
+		</div>
+		<br><br>
+		<h1>Gode School project progress</h1>
+		<a href="projects.html">Read more</a>
+	</div>
+
+
+	<div class="container">
+		<div class="gauge-container">
+			<svg class="gauge" viewBox="0 0 150 150">
+				<circle class="rail" r="67" cx="75" cy="75"></circle>
+
+				<circle class="progress" r="67" data-target="88" cx="75" cy="75">
+					
+				</circle>
+
+			</svg>
+
+			<span class="center percentage">
+				<span class="value">0</span>
+				<span class="percentSymbol">%</span>
+			</span>
+
+
+		</div>
+		<br><br>
+		<h1>Jigjiga School project progress</h1>
+		<a href="projects2.html">Read more</a>
+	</div>
+
+
+	<div class="container">
+		<div class="gauge-container">
+			<svg class="gauge" viewBox="0 0 150 150">
+				<circle class="rail" r="67" cx="75" cy="75"></circle>
+
+				<circle class="progress" r="67" data-target="50" cx="75" cy="75">
+					
+				</circle>
+
+			</svg>
+
+			<span class="center percentage">
+				<span class="value">0</span>
+				<span class="percentSymbol">%</span>
+			</span>
+
+
+		</div>
+		<br><br>
+		<h1>Huded B-School project progress</h1>
+		<a href="projects3.html">Read more</a>
+	</div>
+
+
+	<div class="container">
+		<div class="gauge-container">
+			<svg class="gauge" viewBox="0 0 150 150">
+				<circle class="rail" r="67" cx="75" cy="75"></circle>
+
+				<circle class="progress" r="67" data-target="75" cx="75" cy="75">
+					
+				</circle>
+
+			</svg>
+
+			<span class="center percentage">
+				
+				
+			</span>
+
+
+		</div>
+	</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+
+<script src="same.js"></script>
+
+
+
+
+</body>
+</html>
